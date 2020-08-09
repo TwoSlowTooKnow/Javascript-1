@@ -9,11 +9,18 @@ var wordList =[
     "Gengar",
 ];
 
-var letters = "abcdefghijklmnopqrstuvwxyz".split("")
+var imgArray = new Array();
+
+imgArray[0] = new Image();
+imgArray[0].src = './images/Sprite-0001.png'
+
+imgArray[1] = new Image();
+imgArray[1].src = './images/Sprite-0002.png'
+
+
 
 
 var word ="";
-var lettersInWord = 0;
 var numBlanks = 0;
 var blanksAndLetters = [];
 var wrongGuesses = [];
@@ -31,7 +38,7 @@ function startGame(){
 
     word = wordList[Math.floor(Math.random() * wordList.length)];
     lettersInWord = word.split("");
-    numBlanks = lettersInWord.length;
+    numBlanks = word.length;
 
     console.log(word);
 
@@ -40,10 +47,39 @@ function startGame(){
     
     var div = document.getElementById("letters");
     div.innerHTML = ""
-    for (let i = 0; i < letters.length; i++) {
-        var buttons = document.createElement("button")
-        div.appendChild(buttons);
-        buttons.innerHTML = letters[i];
+    
+    for (let i = 0; i < numBlanks; i++) {
+        div.innerHTML += " _ "
     }
+
     blanks(word)
+}
+
+    var letter = 
+
+function checkLetter(){
+    
+    for (let i = 0; i < word.length; i++) {
+        
+        if(letter == word[i]){
+    
+            
+
+        }
+
+        if(letter != word[i]){
+            
+            
+            var hearts = document.getElementById("hearts")
+            hearts.src = imgArray[1]
+
+
+        }
+        
+    }
+
+
+
+
+
 }

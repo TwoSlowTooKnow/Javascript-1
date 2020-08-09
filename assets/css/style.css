@@ -31,8 +31,8 @@ body{
 .buttons{
     position: absolute;
     bottom: 0px;
-    margin-left: 20px;
-    margin-bottom: 300px;
+    margin-left: 515px;
+    margin-bottom: 145px;
 }
 
 .footer{
@@ -44,6 +44,12 @@ body{
     margin: auto;
     text-align: center;   
 }
-#lettters{
-    flex: auto;
+#alphabet{
+    margin-top: 100px;
+    margin-left: 120px;
+}
+#letters{
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
 }
